@@ -1,0 +1,70 @@
+.main-img{
+    width: 100%;
+
+    opacity: 0.6;
+    display: block;
+    margin: 0;
+}
+
+.reviews{
+    background-color: rgba(0, 0, 0, 0.91);
+    color: white;
+    margin: 0;
+    font-family: "Imprint MT Shadow", serif;
+    text-align: center;
+    padding: 4% ;
+}
+.salonStory{
+    position: absolute;
+    text-align: center;
+    background-color: rgba(117, 150, 116, 0.77);
+    padding: 30px;
+    width: 400px;
+    top: -20px;
+    left: -250px;
+    @media screen and (max-width: 768px) {
+      position: unset;
+        width: 100%;
+    }
+
+}
+.workHours{
+    position: absolute;
+    background-color: rgba(117, 150, 116, 0.77);
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    bottom: 20px;
+    right: -175px;
+    @media screen and (max-width: 768px) {
+        position: unset;
+        width: 100%;
+    }
+
+}
+.storyHoursContainer{
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+.salonOwnerPic{
+    margin-top: 50px;
+    display: block;
+    position: relative;
+    width: 450px;
+    img{
+        opacity: 0.6;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-top: 0;
+    }
+
+}
+

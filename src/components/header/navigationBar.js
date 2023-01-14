@@ -1,6 +1,5 @@
 import {navigationBarItems} from './navigationBarItems';
 import {Dropdown, Space} from "antd";
-import {Link} from "react-router-dom";
 
 const Navbar = () => {
 
@@ -11,17 +10,17 @@ const Navbar = () => {
                      return nav.submenu ? (
 
                          <Dropdown menu={{ items : nav.submenu }} key = {index}>
-                        <Link to={nav.url} className={"nav-items"} >
+                        <a href={nav.url} className={"nav-items"} >
                             <Space>
                                 {nav.title}
                             </Space>
-                        </Link>
+                        </a>
                     </Dropdown>
-                     ) :   <Link to={nav.url}  key = {index} className={"nav-items"} >
+                     ) :   <a href={nav.url}  key = {index} className={"nav-items"} >
                          <Space>
                              {nav.title}
                          </Space>
-                     </Link>;
+                     </a>;
                 })}
             </ul>
         </nav>
