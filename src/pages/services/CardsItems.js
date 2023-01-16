@@ -315,10 +315,6 @@ export const WaxCardsItems = [
                 price : '$25'
             },
             {
-                label : 'Three Quarter Arms',
-                price : '$30'
-            },
-            {
                 label : 'Full Arms',
                 price : '$33'
             },

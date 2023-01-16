@@ -1,13 +1,13 @@
 .serviceTitle {
   display: flex;
-  flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: Serif, serif;
   text-align: center;
   background-color: rgb(243, 243, 244);
+
   .containerItem{
-    flex: 50%;
+    align-self: center;
   }
 }
 
