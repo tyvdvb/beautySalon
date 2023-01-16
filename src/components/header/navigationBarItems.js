@@ -43,24 +43,17 @@ export const navigationBarItems = [
                     </Link>
                 ),
             },
+
             {
                 key: '3',
                 label: (
-                    <Link target="_blank" rel="noopener noreferrer" to={"/spa"}>
-                        Spa
+                    <Link target="_blank" rel="noopener noreferrer" to={"/makeup"}>
+                        MakeUp
                     </Link>
                 ),
             },
             {
                 key: '4',
-                label: (
-                    <Link target="_blank" rel="noopener noreferrer" to={"/makeup"}>
-                        Makeup+Brows
-                    </Link>
-                ),
-            },
-            {
-                key: '5',
                 label: (
                     <Link target="_blank" rel="noopener noreferrer" to={"/wax"}>
                         Wax It

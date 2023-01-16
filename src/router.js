@@ -3,6 +3,7 @@ import App from './App';
 import {
     createBrowserRouter,
 } from "react-router-dom";
+import {ServicesPage} from "./pages/services/ServicesPage";
 
 
 export const router = createBrowserRouter([
@@ -13,6 +14,10 @@ export const router = createBrowserRouter([
             {
                 path: "about",
                 element: <About />,
+            },
+            {
+                path: "services",
+                element: <ServicesPage />,
             },
         ]
     },

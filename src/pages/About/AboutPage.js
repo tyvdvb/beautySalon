@@ -77,9 +77,9 @@ export const About = () => {
                 <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/9f78a3148469687.62d6623c0e2ce.jpg" style={{width: '100%'}}/>
             </div>
 
-            <div className='landing' style={{backgroundColor: 'rgba(0, 0, 0, 0.91)', padding: '30px'}}>
+            <div className='landing' style={{backgroundColor: 'rgba(0, 0, 0, 0.91)', padding: '30px'}} />
 
-            </div>
+
 
         </div>
     );
