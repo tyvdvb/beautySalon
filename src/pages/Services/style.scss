@@ -5,21 +5,35 @@
   font-family: Serif, serif;
   text-align: center;
   background-color: rgb(243, 243, 244);
-
   .containerItem{
     align-self: center;
   }
+  @media screen and (max-width: 768px) {
+    display: block;
+    width: 100%;
+  }
+
 }
 
 .titleDescription{
   text-align: center;
   margin: 30px 150px 50px;
+  @media screen and (max-width: 768px) {
+    position: unset;
+  }
 }
 
 .ServicesCards{
   margin-top: 25px;
   margin-left: 70px;
   margin-right: 70px;
-  border-left: aqua;
-
+}
+.servicesImg{
+  height: 300px;
+  margin-left:75px;
+  @media screen and (max-width: 768px) {
+    margin: 0;
+    position: unset;
+    width: 100%;
+  }
 }

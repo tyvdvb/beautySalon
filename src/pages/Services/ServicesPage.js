@@ -21,13 +21,12 @@ export const ServicesPage = () => {
         <div>
 
             <div className='serviceTitle'  id='hair'>
-                <img src='https://pastels-salon.com/wp-content/uploads/2022/02/HAIR-2.jpg' style={{ height: '300px',  marginLeft:'75px'}}/>
+                <img className='servicesImg' src='https://pastels-salon.com/wp-content/uploads/2022/02/HAIR-2.jpg' />
                 <div className='containerItem'  >
                 <h2>HAIR</h2>
                 <p className='titleDescription'>We believe that beauty is different for each individual and so we never mass produce. During your consultation,
                 our expert stylist will consider your features, your personal style, your hair goals, as well as your lifestyle,
                 to ensure you can achieve a flattering bespoke look you love – all day, every day!</p>
-
                 </div>
             </div>
 

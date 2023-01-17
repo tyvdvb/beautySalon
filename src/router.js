@@ -3,7 +3,7 @@ import App from './App';
 import {
     createBrowserRouter,
 } from "react-router-dom";
-import {ServicesPage} from "./pages/services/ServicesPage";
+import {ServicesPage} from "./pages/Services/ServicesPage";
 
 
 export const router = createBrowserRouter([
