@@ -93,4 +93,9 @@ export const WaxMaster = [
 		img: 'https://static1.squarespace.com/static/62f5f1391c1114796efe189c/t/63a246cb01f6f56d8fe4050d/1671579339674/ARIELLE_GARCIA_CLR_2.jpg',
 		services: 'SERVICES: Lower Body, Upper Body, Bikini',
 	},
+	{
+		name: 'CHELCIE LEAL',
+		img: 'https://static1.squarespace.com/static/62f5f1391c1114796efe189c/t/63a246cb01f6f56d8fe4050d/1671579339674/ARIELLE_GARCIA_CLR_2.jpg',
+		services: 'SERVICES: Lower Body, Upper Body, Bikini',
+	},
 ];
