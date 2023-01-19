@@ -34,7 +34,7 @@ export const ServicesPage = () => {
                 <Row gutter={16} align={'stretch'}>
             {HairCardsItems.map((services, index) => {
                 return(
-                        <Col span={12} key={index}>
+                        <Col md={12}  xs={24} key={index}>
                             <Card title={services.title}  bordered={true}   style={{textAlign: 'center', marginBottom: '20px', position: 'relative',height: '100%',}}>
                                 {services.prices?.map((description, index) => (
                                     <Row key={index} justify='space-between' style={{padding:'10px'}}>
@@ -57,14 +57,14 @@ export const ServicesPage = () => {
             <p className='titleDescription'>With a menu brimming with the latest and best beauty treatments, an expert beauty team on hand that will provide you
                 with helpful tips and advice, we guarantee you will always look and feel BeYOUtiful</p>
                 </div>
-                <img src='https://i.pinimg.com/564x/d1/9d/34/d19d348bf7646b15a01998e951d9cce9.jpg' style={{ height: '300px',  marginRight:'75px'}}/>
+                <img src='https://i.pinimg.com/564x/d1/9d/34/d19d348bf7646b15a01998e951d9cce9.jpg'  />
 
             </div>
             <div className='ServicesCards'>
                 <Row gutter={16} align='stretch'>
                     {NailCardsItems.map((services, index) => {
                         return(
-                            <Col span={8} key={index}>
+                            <Col md={8}  xs={24} key={index}>
                                 <Card title={services.title}  bordered={true}  style={{textAlign: 'center', marginBottom: '20px', position: 'relative',height: '100%',}}>
                                     {services.prices?.map((description, index) => (
                                         <Row key={index} justify='space-between' style={{padding:'10px'}}>
@@ -83,7 +83,7 @@ export const ServicesPage = () => {
 
 
             <div className='serviceTitle' id='makeup'>
-                <img src='https://i.pinimg.com/564x/ba/9a/61/ba9a615d168f270e0d5485260c5672ec.jpg' style={{ height: '300px',  marginLeft:'75px'}}/>
+                <img src='https://i.pinimg.com/564x/ba/9a/61/ba9a615d168f270e0d5485260c5672ec.jpg' className='leftSide' />
                 <div className='containerItem'>
             <h2>MAKEUP</h2>
             <p className='titleDescription'>With an array of treatments including express on offer, our spray tanning expert can tailor-make a tanning treatment to
@@ -94,7 +94,7 @@ export const ServicesPage = () => {
                 <Row gutter={16} align='stretch'>
                     {MakeUpCardsItems.map((services, index) => {
                         return(
-                            <Col span={12} key={index}>
+                            <Col md={12}  xs={24} key={index}>
                                 <Card title={services.title}  bordered={true} style={{textAlign: 'center', marginBottom: '20px', position: 'relative',height: '100%',}}>
                                     {services.prices?.map((description, index) => (
                                         <Row key={index} justify='space-between' style={{padding:'10px'}}>
@@ -117,13 +117,13 @@ export const ServicesPage = () => {
             <p className='titleDescription'>Our only priority is to deliver amazing service and a luxurious waxing experience for men and women.
                 Whether it’s as simple as a brow wax, or as involved as a Brazilian wax, we will get you smooth quickly and with less ouch. </p>
                 </div>
-                <img src='https://i.pinimg.com/564x/35/00/99/35009978728d8f74053dd2a1602512b6.jpg' style={{ height: '300px',  marginRight:'75px'}}/>
+                <img src='https://i.pinimg.com/564x/35/00/99/35009978728d8f74053dd2a1602512b6.jpg' />
             </div>
             <div className='ServicesCards'>
                 <Row gutter={16} align='stretch' >
                     {WaxCardsItems.map((services, index) => {
                         return(
-                            <Col span={8} key={index} >
+                            <Col md={8}  xs={24} key={index} >
                                 <Card title={services.title}  bordered={true} style={{textAlign: 'center', position: 'relative',height: '100%',}}>
                                     {services.prices?.map((description, index) => (
                                         <Row key={index} justify='space-between' style={{padding:'10px'}}>

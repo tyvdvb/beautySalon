@@ -5,14 +5,28 @@
   font-family: Serif, serif;
   text-align: center;
   background-color: rgb(243, 243, 244);
+  img{
+    height: 300px;
+    margin-right:75px;
+    @media screen and (max-width: 768px) {
+      margin: 0;
+    }
+  }
   .containerItem{
     align-self: center;
   }
   @media screen and (max-width: 768px) {
     display: block;
     width: 100%;
+    margin-top: 0;
   }
 
+}
+.leftSide{
+  margin-left:75px;
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
 }
 
 .titleDescription{
@@ -34,6 +48,5 @@
   @media screen and (max-width: 768px) {
     margin: 0;
     position: unset;
-    width: 100%;
   }
 }
