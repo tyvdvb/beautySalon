@@ -7,7 +7,7 @@
       <option name="myCustomPropertiesList">
         <value>
           <list size="1">
-            <item index="0" class="java.lang.String" itemvalue="align" />
+            <item index="0" class="java.lang.String" itemvalue="grid-template-columnsolumns" />
           </list>
         </value>
       </option>
