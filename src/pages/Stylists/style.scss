@@ -34,3 +34,18 @@
 		height: 250px;
 	}
 }
+
+.stylistCard {
+	height: 100%;
+	position: relative;
+	padding-bottom: 50px;
+}
+
+.bookBtn {
+	background-color: white;
+	height: 40px;
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+}

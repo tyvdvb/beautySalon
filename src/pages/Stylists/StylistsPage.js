@@ -1,8 +1,8 @@
 import React from 'react';
 import './style.scss';
-import { Card, Col, Row } from 'antd';
+import { Col, Row } from 'antd';
 import { MakeupStylist, NailMaster, StylistHair, WaxMaster } from './Stylists';
-const { Meta } = Card;
+import { StylistsList } from './StylistsList';
 
 export const StylistsPage = () => {
 	return (
@@ -38,48 +38,7 @@ export const StylistsPage = () => {
 						</div>
 					</Col>
 					<Col xs={24} md={16}>
-						<Row gutter={16} align={'stretch'}>
-							{StylistHair.map((stylist, index) => {
-								return (
-									<Col lg={8} xs={24} sm={12} key={index}>
-										<Card
-											className="stylistCard"
-											hoverable
-											cover={
-												<img
-													className="imgStylist"
-													alt="example"
-													src={stylist.img}
-													style={{ height: '400px' }}
-												/>
-											}
-											style={{
-												height: '100%',
-												position: 'relative',
-												paddingBottom: '50px',
-											}}
-										>
-											<Meta
-												title={stylist.name}
-												description={stylist.services}
-											/>
-											<button
-												style={{
-													backgroundColor: 'white',
-													height: '40px',
-													width: '100%',
-													position: 'absolute',
-													bottom: '10px',
-													left: '0px',
-												}}
-											>
-												BOOK APPOINTMENT
-											</button>
-										</Card>
-									</Col>
-								);
-							})}
-						</Row>
+						<StylistsList array={StylistHair} />
 					</Col>
 				</Row>
 			</div>
@@ -104,47 +63,7 @@ export const StylistsPage = () => {
 						</div>
 					</Col>
 					<Col xs={24} md={16}>
-						<Row gutter={16} align={'stretch'}>
-							{NailMaster.map((stylist, index) => {
-								return (
-									<Col lg={8} xs={24} sm={12} key={index}>
-										<Card
-											className="stylistCard"
-											hoverable
-											cover={
-												<img
-													alt="example"
-													src={stylist.img}
-													style={{ height: '400px' }}
-												/>
-											}
-											style={{
-												height: '100%',
-												position: 'relative',
-												paddingBottom: '50px',
-											}}
-										>
-											<Meta
-												title={stylist.name}
-												description={stylist.services}
-											/>
-											<button
-												style={{
-													backgroundColor: 'white',
-													height: '40px',
-													width: '100%',
-													position: 'absolute',
-													bottom: '10px',
-													left: '0px',
-												}}
-											>
-												BOOK APPOINTMENT
-											</button>
-										</Card>
-									</Col>
-								);
-							})}
-						</Row>
+						<StylistsList array={NailMaster} />
 					</Col>
 				</Row>
 			</div>
@@ -169,47 +88,7 @@ export const StylistsPage = () => {
 						</div>
 					</Col>
 					<Col xs={24} md={16}>
-						<Row gutter={16} align={'stretch'}>
-							{MakeupStylist.map((stylist, index) => {
-								return (
-									<Col lg={8} xs={24} sm={12} key={index}>
-										<Card
-											className="stylistCard"
-											hoverable
-											cover={
-												<img
-													alt="example"
-													src={stylist.img}
-													style={{ height: '400px' }}
-												/>
-											}
-											style={{
-												height: '100%',
-												position: 'relative',
-												paddingBottom: '50px',
-											}}
-										>
-											<Meta
-												title={stylist.name}
-												description={stylist.services}
-											/>
-											<button
-												style={{
-													backgroundColor: 'white',
-													height: '40px',
-													width: '100%',
-													position: 'absolute',
-													bottom: '10px',
-													left: '0px',
-												}}
-											>
-												BOOK APPOINTMENT
-											</button>
-										</Card>
-									</Col>
-								);
-							})}
-						</Row>
+						<StylistsList array={MakeupStylist} />
 					</Col>
 				</Row>
 			</div>
@@ -234,47 +113,7 @@ export const StylistsPage = () => {
 						</div>
 					</Col>
 					<Col xs={24} md={16}>
-						<Row gutter={16} align={'stretch'}>
-							{WaxMaster.map((stylist, index) => {
-								return (
-									<Col lg={8} xs={24} sm={12} key={index}>
-										<Card
-											className="stylistCard"
-											hoverable
-											cover={
-												<img
-													alt="example"
-													src={stylist.img}
-													style={{ height: '400px' }}
-												/>
-											}
-											style={{
-												height: '100%',
-												position: 'relative',
-												paddingBottom: '50px',
-											}}
-										>
-											<Meta
-												title={stylist.name}
-												description={stylist.services}
-											/>
-											<button
-												style={{
-													backgroundColor: 'white',
-													height: '40px',
-													width: '100%',
-													position: 'absolute',
-													bottom: '10px',
-													left: '0px',
-												}}
-											>
-												BOOK APPOINTMENT
-											</button>
-										</Card>
-									</Col>
-								);
-							})}
-						</Row>
+						<StylistsList array={WaxMaster} />
 					</Col>
 				</Row>
 			</div>
