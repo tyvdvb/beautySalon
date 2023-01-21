@@ -3,6 +3,7 @@ import {HairCardsItems, MakeUpCardsItems, NailCardsItems, WaxCardsItems} from ".
 import {Card, Col, Row} from "antd";
 import './style.scss'
 import {useSearchParams} from "react-router-dom";
+import {CardList} from "./CardList";
 
 
 
@@ -120,28 +121,26 @@ export const ServicesPage = () => {
                 <img src='https://i.pinimg.com/564x/35/00/99/35009978728d8f74053dd2a1602512b6.jpg' />
             </div>
             <div className='ServicesCards'>
-                <Row gutter={16} align='stretch' >
-                    {WaxCardsItems.map((services, index) => {
-                        return(
-                            <Col md={8}  xs={24} key={index} >
-                                <Card title={services.title}  bordered={true} style={{textAlign: 'center', position: 'relative',height: '100%',}}>
-                                    {services.prices?.map((description, index) => (
-                                        <Row key={index} justify='space-between' style={{padding:'10px'}}>
-                                            <span>{description.label}</span>
-                                            <span>{description.price}</span>
-                                        </Row>
-                                    ))}
-                                </Card>
-                            </Col>
+                {/*<Row gutter={16} align='stretch' >*/}
+                {/*    {WaxCardsItems.map((services, index) => {*/}
+                {/*        return(*/}
+                {/*            <Col md={8}  xs={24} key={index} >*/}
+                {/*                <Card title={services.title}  bordered={true} style={{textAlign: 'center', position: 'relative',height: '100%',}}>*/}
+                {/*                    {services.prices?.map((description, index) => (*/}
+                {/*                        <Row key={index} justify='space-between' style={{padding:'10px'}}>*/}
+                {/*                            <span>{description.label}</span>*/}
+                {/*                            <span>{description.price}</span>*/}
+                {/*                        </Row>*/}
+                {/*                    ))}*/}
+                {/*                </Card>*/}
+                {/*            </Col>*/}
 
-                        )
+                {/*        )*/}
 
-                    })}
-                </Row>
+                {/*    })}*/}
+                {/*</Row>*/}
+                <CardList array={WaxCardsItems} />
             </div>
-
-
-            <div className='landing' style={{backgroundColor: 'rgba(0, 0, 0, 0.91)', padding: '30px'}} />
         </div>
 
     );
