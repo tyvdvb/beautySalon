@@ -30,7 +30,7 @@ export const navigationBarItems = [
 			{
 				key: '1',
 				label: (
-					<Link target="_blank" rel="noopener noreferrer" to={'/hair'}>
+					<Link rel="noopener noreferrer" to={'/services?scrollTo=hair'}>
 						Hair
 					</Link>
 				),
@@ -38,7 +38,7 @@ export const navigationBarItems = [
 			{
 				key: '2',
 				label: (
-					<Link target="_blank" rel="noopener noreferrer" to={'/nails'}>
+					<Link rel="noopener noreferrer" to={'/services?scrollTo=nails'}>
 						Nails
 					</Link>
 				),
@@ -46,23 +46,15 @@ export const navigationBarItems = [
 			{
 				key: '3',
 				label: (
-					<Link target="_blank" rel="noopener noreferrer" to={'/spa'}>
-						Spa
+					<Link rel="noopener noreferrer" to={'/services?scrollTo=makeup'}>
+						Makeup+Brows
 					</Link>
 				),
 			},
 			{
 				key: '4',
 				label: (
-					<Link target="_blank" rel="noopener noreferrer" to={'/makeup'}>
-						Makeup+Brows
-					</Link>
-				),
-			},
-			{
-				key: '5',
-				label: (
-					<Link target="_blank" rel="noopener noreferrer" to={'/wax'}>
+					<Link rel="noopener noreferrer" to={'/services?scrollTo=wax'}>
 						Wax It
 					</Link>
 				),
