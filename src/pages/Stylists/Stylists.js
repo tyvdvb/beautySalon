@@ -25,6 +25,27 @@ export const StylistHair = [
 		img: 'https://static1.squarespace.com/static/62f5f1391c1114796efe189c/t/6399b8cbdff35264be3ba1d3/1671018699457/CHELCIE_LEAL_CLR.jpg',
 		services: 'SERVICES: Haircuts, Color, Smoothing Treatments, Updo’s',
 	},
+	{
+		name: 'JULIA GAFFNEY',
+		img: 'https://static1.squarespace.com/static/62f5f1391c1114796efe189c/t/63b61ccf90d5725ecaaf456d/1672879311550/ANA_MONTES_DE_OCA_CLR_2.jpg',
+		services: 'SERVICES: Color, Cutting, Styling, Smoothing Systems',
+	},
+	{
+		name: 'RENO PREZIO',
+		img: 'https://static1.squarespace.com/static/62f5f1391c1114796efe189c/t/6399be9d161ed05edd5243af/1671020189270/RENO_PREZIO_CLR.jpg',
+		services: 'SERVICES: Haircuts, Color, Smoothing Treatments, and Updo’s',
+	},
+	{
+		name: 'MONICA DE LA ROSA',
+		img: 'https://static1.squarespace.com/static/62f5f1391c1114796efe189c/t/6399b3300b201a7f2b0c35bf/1671017265066/BRIANA_WAITE_CLR.jpg',
+		services:
+			'SERVICES: Color, Extensions, Cutting, Smoothing Treatments (Brazilian and Keratin), Blowouts',
+	},
+	{
+		name: 'MONIKA VALADEZ',
+		img: 'https://static1.squarespace.com/static/62f5f1391c1114796efe189c/t/63b5f5cf425b6851330c44fd/1672869327426/Kelsey_Norton_CLR_2.jpg',
+		services: 'SERVICES: Hair extensions and color',
+	},
 ];
 
 export const NailMaster = [

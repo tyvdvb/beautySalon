@@ -3,6 +3,7 @@ import './style.scss';
 import { Col, Row } from 'antd';
 import { MakeupStylist, NailMaster, StylistHair, WaxMaster } from './Stylists';
 import { StylistsList } from './StylistsList';
+import { PaginationStylists } from './PaginationStylists';
 
 export const StylistsPage = () => {
 	return (
@@ -38,7 +39,7 @@ export const StylistsPage = () => {
 						</div>
 					</Col>
 					<Col xs={24} md={16}>
-						<StylistsList array={StylistHair} />
+						<PaginationStylists array={StylistHair} />
 					</Col>
 				</Row>
 			</div>
