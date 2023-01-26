@@ -1,7 +1,7 @@
 import Navbar from './navigationBar';
 import './style.css'
 
-const Header = () => {
+export const Header = () => {
     return (
         <header>
             <div className="nav-area">
@@ -14,4 +14,3 @@ const Header = () => {
     );
 };
 
-export default Header;
