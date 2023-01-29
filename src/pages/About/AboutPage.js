@@ -1,8 +1,11 @@
 import React from "react";
 import "./style.scss"
+import {useScrollTop} from "../../hooks/useScrollTop";
+import {NavLink} from "react-router-dom";
 
 
 export const About = () => {
+    useScrollTop();
     return (
         <div className={"about-page"}>
             <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/a2703085515699.5d7e82b446156.jpg" className="main-img"/>
@@ -48,18 +51,18 @@ export const About = () => {
         </div>
             <hr style={{margin: '5%'}}/>
 
-            <div className='nav' style={{display: 'grid', gap: '20px', gridTemplateColumns: "1fr 1fr 1fr", margin: "10px 20px"}}>
+            <div className='nav' >
                 <div style={{textAlign:'center'}}>
-                    <label style={{position:'relative', display: 'block', marginBottom: '20px'}}>EXPLORE OUR SERVICES</label>
-                <button style={{ backgroundColor: 'black', height: '100px', width: '100%', color: 'white', }}>Services</button>
+                    <label className='buttonLabel' >EXPLORE OUR SERVICES</label>
+                <button  className='buttons' ><NavLink to={'/services'} className='links'>Services</NavLink></button>
                 </div>
                 <div style={{textAlign:'center'}}>
-                    <label style={{position:'relative', display: 'block', marginBottom: '20px'}}>EXPLORE OUR SERVICES</label>
-                    <button style={{ backgroundColor: 'black', height: '100px', width: '100%', color: 'white', }}>Services</button>
+                    <label  className='buttonLabel' >EXPLORE OUR STYLISTS</label>
+                    <button className='buttons' ><NavLink to={'/stylists'} className='links'>Stylists</NavLink></button>
                 </div>
                 <div style={{textAlign:'center'}}>
-                    <label style={{position:'relative', display: 'block', marginBottom: '20px'}}>EXPLORE OUR SERVICES</label>
-                    <button style={{ backgroundColor: 'black', height: '100px', width: '100%', color: 'white', }}>Services</button>
+                    <label  className='buttonLabel' >EXPLORE OUR CONTACT</label>
+                    <button className='buttons' ><NavLink to={'/contact'} className='links'>Contact</NavLink></button>
                 </div>
             </div>
 

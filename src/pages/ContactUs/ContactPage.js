@@ -1,6 +1,8 @@
 import "./style.scss"
+import {useScrollTop} from "../../hooks/useScrollTop";
 
 export const Contacts = () => {
+    useScrollTop();
     return(
         <div style={{padding: '0 60px'}}>
             <h2 className='pageTitle'>Contact</h2>

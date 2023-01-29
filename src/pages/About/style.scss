@@ -68,3 +68,36 @@
 
 }
 
+.links{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.nav{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 20px;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+
+}
+
+.buttonLabel{
+    position: relative;
+    display: block;
+    margin: 15px 20px;
+}
+
+.buttons{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    color: white;
+    @media screen and (max-width: 768px) {
+        display: block;
+        height: 70px;
+    }
+}
+

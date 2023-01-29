@@ -4,8 +4,10 @@ import { Col, Row } from 'antd';
 import { MakeupStylist, NailMaster, StylistHair, WaxMaster } from './Stylists';
 import { StylistsList } from './StylistsList';
 import { PaginationStylists } from './PaginationStylists';
+import {useScrollTop} from "../../hooks/useScrollTop";
 
 export const StylistsPage = () => {
+	useScrollTop();
 	return (
 		<div>
 			<img
