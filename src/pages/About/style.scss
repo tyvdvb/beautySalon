@@ -22,6 +22,7 @@
     width: 400px;
     top: -20px;
     left: -250px;
+    z-index: 2;
     @media screen and (max-width: 768px) {
       position: unset;
         width: 100%;
@@ -68,6 +69,13 @@
 
 }
 
+.salonPictures{
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: 0.7fr 1fr 0.7fr;
+    margin: 10px 20px;
+}
 .links{
     text-decoration: none;
     color: white;
@@ -99,5 +107,20 @@
         display: block;
         height: 70px;
     }
+}
+.horizontalLine{
+    margin: 5% 0;
+}
+.buttonContainer{
+    text-align: center;
+}
+
+#date{
+    font-style : italic;
+    margin-top: 4%;
+}
+#image{
+    width: 100% ;
+    object-fit: cover;
 }
 

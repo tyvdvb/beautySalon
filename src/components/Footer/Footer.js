@@ -10,10 +10,10 @@ export const Footer = () => {
                 <div className='navigation'>
                     <h4>CUSTOMER ASSISTANCE</h4>
                     <ul>
-                        <li style={{marginTop: '20px'}} ><NavLink to={'/about'} className='navMenu'>About </NavLink></li>
-                        <li style={{marginTop: '20px'}}><NavLink to={'/services'} className='navMenu'>Services</NavLink></li>
-                        <li style={{marginTop: '20px'}}><NavLink to={'/stylists'} className='navMenu'>Stylists</NavLink></li>
-                        <li style={{marginTop: '20px'}}><NavLink to={'/contact'} className='navMenu'>Contact</NavLink></li>
+                        <li className='navLinkMenu' ><NavLink to={'/about'} className='navMenu'>About </NavLink></li>
+                        <li className='navLinkMenu' ><NavLink to={'/services'} className='navMenu'>Services</NavLink></li>
+                        <li className='navLinkMenu' ><NavLink to={'/stylists'} className='navMenu'>Stylists</NavLink></li>
+                        <li className='navLinkMenu' ><NavLink to={'/contact'} className='navMenu'>Contact</NavLink></li>
                     </ul>
                 </div>
                 <div className='salonName'>

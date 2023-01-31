@@ -11,7 +11,7 @@ export const About = () => {
             <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/a2703085515699.5d7e82b446156.jpg" className="main-img"/>
             <div className="reviews">
                 <h2 id={"costumer-review"}>“I love that I found this place and I have a new favorite salon!” -Ashley, Indianapolis</h2>
-                <p id={"date"} style={{fontStyle : "italic", marginTop: '4%'}}>
+                <p id={"date"}>
                     June 2021
                 </p>
             </div>
@@ -20,7 +20,7 @@ export const About = () => {
             <div className="storyHoursContainer" >
 
                         <div className='salonOwnerPic'  >
-                            <div className='salonStory'  style={{zIndex: "2"}} >
+                            <div className='salonStory'  >
                                 <h1>OUR STORY</h1>
                                 <p>Salon  began when Becky Bateman, the founder of the salon, relocated from Blythe to the Temecula Valley
                                     in 1971. She started working in a local salon and soon found herself in the position of becoming the owner.
@@ -31,7 +31,7 @@ export const About = () => {
                                     she attended a local beauty school. She then followed her mother’s footsteps and began working
                                     as a stylist and taking on the role as an owner. Working alongside her family has driven her passion for</p>
                             </div>
-                        <img  src="https://i.pinimg.com/564x/94/ea/d7/94ead77df9e4406fbd3d92d3ef19da17.jpg" style={{ width: '100% ' , objectFit: "cover"}}/>
+                        <img  id='image' src="https://i.pinimg.com/564x/94/ea/d7/94ead77df9e4406fbd3d92d3ef19da17.jpg" />
                             <div className='workHours' >
                                 <h1>HOURS:</h1><br/>
                                 <p>Monday: 8am-9pm</p>
@@ -49,24 +49,24 @@ export const About = () => {
 
 
         </div>
-            <hr style={{margin: '5%'}}/>
+            <hr className='horizontalLine'/>
 
             <div className='nav' >
-                <div style={{textAlign:'center'}}>
+                <div className='buttonContainer'>
                     <label className='buttonLabel' >EXPLORE OUR SERVICES</label>
                 <button  className='buttons' ><NavLink to={'/services'} className='links'>Services</NavLink></button>
                 </div>
-                <div style={{textAlign:'center'}}>
+                <div className='buttonContainer'>
                     <label  className='buttonLabel' >EXPLORE OUR STYLISTS</label>
                     <button className='buttons' ><NavLink to={'/stylists'} className='links'>Stylists</NavLink></button>
                 </div>
-                <div style={{textAlign:'center'}}>
+                <div className='buttonContainer'>
                     <label  className='buttonLabel' >EXPLORE OUR CONTACT</label>
                     <button className='buttons' ><NavLink to={'/contact'} className='links'>Contact</NavLink></button>
                 </div>
             </div>
 
-            <hr style={{margin: '5%'}}/>
+            <hr className='horizontalLine'/>
             <div className='salonMission'>
                 <h1 style={{textAlign: 'center'}}>OUR MISSION</h1>
                 <p style={{margin: " 2% 10%", textAlign: 'center'}}>We strive to create an inclusive environment where guests can feel known and taken care of.
@@ -74,7 +74,7 @@ export const About = () => {
                     We walk alongside each of our stylists, training them and creating opportunities
                     of growth both individually and as a team. At Sisu, we are family. There is a place for you here, too.</p>
             </div>
-            <div className="salonPictures" style={{display: 'grid', alignItems: 'center', gap: '20px', gridTemplateColumns: "0.7fr 1fr 0.7fr", margin: "10px 20px"}}>
+            <div className="salonPictures" >
                 <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/9f78a3148469687.62d6623c0e2ce.jpg" style={{width: '100%'}}/>
                 <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/9f78a3148469687.62d6623c0e2ce.jpg" style={{width: '100%'}}/>
                 <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/9f78a3148469687.62d6623c0e2ce.jpg" style={{width: '100%'}}/>
