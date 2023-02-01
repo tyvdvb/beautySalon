@@ -1,6 +1,7 @@
 import './style.scss'
 import {Input} from "antd";
 import { UserOutlined } from '@ant-design/icons';
+import {NavLink} from "react-router-dom";
 
 export const Footer = () => {
     return (
@@ -9,10 +10,10 @@ export const Footer = () => {
                 <div className='navigation'>
                     <h4>CUSTOMER ASSISTANCE</h4>
                     <ul>
-                        <li><a>About </a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Stylists</a></li>
-                        <li><a>Contact</a></li>
+                        <li className='navLinkMenu' ><NavLink to={'/about'} className='navMenu'>About </NavLink></li>
+                        <li className='navLinkMenu' ><NavLink to={'/services'} className='navMenu'>Services</NavLink></li>
+                        <li className='navLinkMenu' ><NavLink to={'/stylists'} className='navMenu'>Stylists</NavLink></li>
+                        <li className='navLinkMenu' ><NavLink to={'/contact'} className='navMenu'>Contact</NavLink></li>
                     </ul>
                 </div>
                 <div className='salonName'>
