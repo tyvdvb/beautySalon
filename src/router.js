@@ -1,6 +1,6 @@
 import { About } from './pages/About/AboutPage';
 import App from './App';
-import { createBrowserRouter } from 'react-router-dom';
+import {createBrowserRouter, Navigate} from 'react-router-dom';
 import { StylistsPage } from './pages/Stylists/StylistsPage';
 import { ServicesPage } from './pages/Services/ServicesPage';
 import { Contacts } from './pages/ContactUs/ContactPage';
@@ -37,7 +37,12 @@ export const router = createBrowserRouter([
 			{
 				path: 'book',
 				element: <MyCalendar />
+			},
+			{
+				path: '',
+				element: <Navigate to={'/landing'} />
 			}
+
 		],
 	},
 ]);
