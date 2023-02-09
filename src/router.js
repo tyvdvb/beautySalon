@@ -1,11 +1,11 @@
 import { About } from './pages/About/AboutPage';
 import App from './App';
-import {createBrowserRouter, Navigate} from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { StylistsPage } from './pages/Stylists/StylistsPage';
 import { ServicesPage } from './pages/Services/ServicesPage';
 import { Contacts } from './pages/ContactUs/ContactPage';
-import {MyCalendar} from "./pages/Book/Calendar";
-import {VideoPage} from "./pages/VideoPage";
+import { MyCalendar } from './pages/Book/Calendar';
+import { VideoPage } from './pages/VideoPage';
 
 export const router = createBrowserRouter([
 	{
@@ -36,13 +36,12 @@ export const router = createBrowserRouter([
 			},
 			{
 				path: 'book',
-				element: <MyCalendar />
+				element: <MyCalendar />,
 			},
 			{
 				path: '',
-				element: <Navigate to={'/landing'} />
-			}
-
+				element: <Navigate to={'/landing'} />,
+			},
 		],
 	},
 ]);

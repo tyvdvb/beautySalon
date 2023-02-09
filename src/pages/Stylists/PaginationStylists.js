@@ -1,13 +1,15 @@
 import { Col, Pagination, Row } from 'antd';
-import {  useState } from 'react';
+import { useState } from 'react';
 import './style.scss';
-import {StylistCard} from "./StylistCard";
+import { StylistCard } from './StylistCard';
 
 const PAGE_SIZE = 3;
 export function PaginationStylists(props) {
 	const [page, setPage] = useState(0);
-	const displayedArray = props.array.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
-
+	const displayedArray = props.array.slice(
+		page * PAGE_SIZE,
+		page * PAGE_SIZE + PAGE_SIZE
+	);
 
 	console.log(props.array.length);
 	return (
@@ -16,12 +18,12 @@ export function PaginationStylists(props) {
 				{displayedArray.map((stylist, index) => {
 					return (
 						<Col lg={8} xs={24} sm={12} key={index}>
-							<StylistCard stylist={stylist}/>
+							<StylistCard stylist={stylist} />
 						</Col>
 					);
 				})}
 			</Row>
-			{ displayedArray.length>0 &&
+			{displayedArray.length > 0 && (
 				<Pagination
 					page={page}
 					onChange={(newPage) => setPage(newPage - 1)}
@@ -29,7 +31,7 @@ export function PaginationStylists(props) {
 					total={props.array.length}
 					className="pagination"
 				/>
-			}
+			)}
 		</>
 	);
 }

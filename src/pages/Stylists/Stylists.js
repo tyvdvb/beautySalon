@@ -1,5 +1,3 @@
-
-
 export const StylistHair = [
 	{
 		name: 'JULIA GAFFNEY',
@@ -98,7 +96,6 @@ export const NailMaster = [
 		services: 'SERVICES: Acrylic, Gels, Polishing, Manicure',
 		sex: 'female',
 		age: 32,
-
 	},
 ];
 
