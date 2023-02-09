@@ -8,7 +8,7 @@ export const Footer = () => {
         <footer>
             <div className='footer'>
                 <div className='navigation'>
-                    <h4>CUSTOMER ASSISTANCE</h4>
+                    <h4 >CUSTOMER ASSISTANCE</h4>
                     <ul>
                         <li className='navLinkMenu' ><NavLink to={'/about'} className='navMenu'>About </NavLink></li>
                         <li className='navLinkMenu' ><NavLink to={'/services'} className='navMenu'>Services</NavLink></li>
@@ -17,7 +17,7 @@ export const Footer = () => {
                     </ul>
                 </div>
                 <div className='salonName'>
-                    <fieldset className='salon'>Beauty Salon</fieldset>
+                    <fieldset className='salon'> Magni·fique</fieldset>
                     <h5>SUBSCRIBE TO STYLE</h5>
                     <Input  className='userEmailInput' placeholder="email address" prefix={<UserOutlined />} />
 

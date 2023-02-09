@@ -1,15 +1,15 @@
 import Navbar from './navigationBar';
-import './style.css'
+import './style.scss'
 
 export const Header = () => {
     return (
         <header>
-            <div className="nav-area">
-                <a href={"/"} className="logo">
-                    Logo
-                </a>
-                <Navbar />
-            </div>
+            <a href={"/landing"} className="logo">
+                Magni·fique
+            </a>
+
+                <Navbar/>
+
         </header>
     );
 };

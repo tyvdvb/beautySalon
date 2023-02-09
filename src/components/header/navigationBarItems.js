@@ -4,24 +4,6 @@ export const navigationBarItems = [
 	{
 		title: 'About',
 		url: '/about',
-		// submenu : [
-		//     {
-		//         key: '1',
-		//         label: (
-		//             <Link target="_blank" rel="noopener noreferrer" to={"/salon"}>
-		//                The Salon
-		//             </Link>
-		//         ),
-		//     },
-		//     {
-		//         key: '2',
-		//         label: (
-		//             <Link target="_blank" rel="noopener noreferrer" to={"/media"}>
-		//                 Social Media
-		//             </Link>
-		//         ),
-		//     },
-		// ],
 	},
 	{
 		title: 'Services',
