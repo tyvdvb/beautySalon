@@ -1,5 +1,5 @@
 import {navigationBarItems} from './navigationBarItems';
-import {Dropdown, Space} from "antd";
+import { Dropdown, Space} from "antd";
 
 const Navbar = () => {
 
@@ -11,13 +11,13 @@ const Navbar = () => {
 
                          <Dropdown menu={{ items : nav.submenu }} key = {index}>
                         <a href={nav.url} className={"nav-items"} >
-                            <Space>
+                            <Space style={{ fontFamily: 'Bitter, serif'}}>
                                 {nav.title}
                             </Space>
                         </a>
                     </Dropdown>
                      ) :   <a href={nav.url}  key = {index} className={"nav-items"} >
-                         <Space>
+                         <Space style={{ fontFamily: 'Bitter, serif'}}>
                              {nav.title}
                          </Space>
                      </a>;

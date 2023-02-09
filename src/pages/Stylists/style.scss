@@ -1,9 +1,17 @@
 .titleText {
 	position: absolute;
-	top: 40%;
 	left: 50%;
+	top: 45%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+	h2{
+		font-family: 'Playfair Display SC', serif;
+		letter-spacing: 0.2em;
+		font-weight: bold;
+	}
+	p{
+		font-family: 'Bitter', serif;
+	}
 	@media screen and (max-width: 768px) {
 		top: 25%;
 		font-size: 15px;
@@ -11,7 +19,6 @@
 }
 .stylist {
 	margin: 25px 70px;
-	//width: 100%;
 	.teamDescription {
 		line-height: 2em;
 
@@ -53,4 +60,17 @@
 .pagination {
 	text-align: center;
 	margin-top: 2%;
+}
+
+.selects{
+	display: grid;
+	align-items: center;
+	gap: 20px;
+	grid-template-columns: 1fr  1fr;
+	margin: 10px 30%;
+
+}
+.searchInput{
+	align-items: center;
+	margin: 20px 10%;
 }
