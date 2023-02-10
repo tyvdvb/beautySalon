@@ -41,7 +41,7 @@ export const StylistsPage = () => {
 					}
 				/>
 				<div className="titleText">
-					<h2 style={{ margin: '20px' }}>OUR TEAM</h2>
+					<h2>OUR TEAM</h2>
 					<p>
 						It’s our delight to provide a comfortable and friendly environment
 						for our guests. Say hello to the team that makes it possible!

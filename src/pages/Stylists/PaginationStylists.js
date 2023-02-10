@@ -11,7 +11,6 @@ export function PaginationStylists(props) {
 		page * PAGE_SIZE + PAGE_SIZE
 	);
 
-	console.log(props.array.length);
 	return (
 		<>
 			<Row gutter={16} align={'stretch'}>

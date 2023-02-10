@@ -1,34 +1,37 @@
-
-.horizontalLineBooking{
-  margin: 0 5%;
+.horizontalLineBooking {
+	margin: 0 5%;
 }
 
-.pageTitleBooking{
-  margin: 3% 0 1% 0;
-  font-size: 30px;
-  position: relative;
-  font-family: 'Playfair Display SC', serif;
-  letter-spacing: 0.2em;
-  font-weight: bold;
+.pageTitleBooking {
+	margin: 3% 0 1% 0;
+	font-size: 30px;
+	position: relative;
+	font-family: 'Playfair Display SC', serif;
+	letter-spacing: 0.2em;
+	font-weight: bold;
+	@media screen and (max-width: 768px) {
+		font-size: 24px;
+		letter-spacing: 0.1em;
+		margin-top: 6%;
+	}
 }
 
-.bookingInfo{
-  text-align: center;
-  font-family: 'Bitter', serif;
-  .description{
-    margin: 1% 10%;
-    font-size: 16px;
-  }
-  p{
-    font-size: 13px;
-  }
-  @media screen and (max-width: 768px) {
-    p{
-      font-size: 10px;
-    }
-  }
-
+.bookingInfo {
+	text-align: center;
+	font-family: 'Bitter', serif;
+	.description {
+		margin: 1% 10%;
+		font-size: 16px;
+	}
+	p {
+		font-size: 13px;
+	}
+	@media screen and (max-width: 768px) {
+		p {
+			font-size: 12px;
+		}
+		.description {
+			font-size: 14px;
+		}
+	}
 }
-
-
-
