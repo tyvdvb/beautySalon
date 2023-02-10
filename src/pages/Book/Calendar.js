@@ -295,7 +295,7 @@ export function MyCalendar() {
 								selectedEventChanged({
 									start: value.toDate(),
 									end: new Date(
-										value.toDate().getTime() - selectedServiceObj.duration
+										value.toDate().getTime() + selectedServiceObj.duration
 									),
 								})
 							}

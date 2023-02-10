@@ -2,9 +2,8 @@ export default [
 	{
 		id: 1,
 		title: 'Bang Trim',
-		start: new Date(new Date().setHours(new Date().getHours() - 3)),
-		end: new Date(new Date().setHours(new Date().getHours() + 3)),
-		stylist: 'vvv',
+		start: new Date(2023, 1, 10, 13, 10, 0),
+		end: new Date(2023, 1, 10, 13, 40, 0),
 		isMy: true,
 	},
 	{
