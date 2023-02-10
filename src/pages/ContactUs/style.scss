@@ -1,87 +1,91 @@
-.container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
 
-  @media screen and (max-width: 768px) {
-    display: block;
-    width: 100%;
-  }
+	@media screen and (max-width: 768px) {
+		display: block;
+		width: 100%;
+	}
 }
-.containerMap{
-  display: grid;
-  grid-template-columns: 0.9fr 1fr;
-  align-items: center;
-  margin-bottom: 5%;
+.containerMap {
+	display: grid;
+	grid-template-columns: 0.9fr 1fr;
+	align-items: center;
+	margin-bottom: 5%;
 
-  h4{
-    text-decoration: underline;
-  }
-  @media screen and (max-width: 768px) {
-    display: block;
-    width: 100%;
-  }
-}
-
-.pageTitle{
-  text-align: center;
-  margin-top: 3%;
-  font-family: 'Playfair Display SC', serif;
-  letter-spacing: 0.2em;
-  font-weight: bold;
-  font-size: 30px;
+	h4 {
+		text-decoration: underline;
+	}
+	@media screen and (max-width: 768px) {
+		display: block;
+		width: 100%;
+	}
 }
 
-.text{
-  text-align: center;
-  line-height: 4em;
+.pageTitle {
+	text-align: center;
+	margin-top: 5%;
+	font-family: 'Playfair Display SC', serif;
+	letter-spacing: 0.2em;
+	font-weight: bold;
+	font-size: 30px;
+	@media screen and (max-width: 768px) {
+		font-size: 24px;
+		letter-spacing: 0.1em;
+		margin: 10% 0;
+	}
 }
 
-.cardImg{
-  height: 350px;
-  width: 450px;
-  justify-self: center;
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    height: auto;
-  }
-
-}
-.buttons{
-  background-color: black;
-  width: 100%;
-  height: 40px;
-  text-align: center;
-  color: white;
+.text {
+	text-align: center;
+	line-height: 4em;
+	@media screen and (max-width: 768px) {
+		line-height: 3em;
+	}
 }
 
-.buttons-container{
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 100px 20px;
-  @media screen and (max-width: 768px) {
-    margin:50px 20px ;
-  }
-
-
+.cardImg {
+	height: 350px;
+	width: 450px;
+	justify-self: center;
+	@media screen and (max-width: 768px) {
+		width: 100%;
+		height: auto;
+	}
+}
+.buttons {
+	background-color: black;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	color: white;
 }
 
-.contactInfo{
-  text-align: left;
-  line-height: 2.5em;
-  @media screen and (max-width: 768px) {
-    text-align: center;
-    width: 100%;
-  }
+.buttons-container {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 100px 20px;
+	@media screen and (max-width: 768px) {
+		margin: 50px 20px;
+	}
+}
 
+.contactInfo {
+	text-align: left;
+	line-height: 2.5em;
+	@media screen and (max-width: 768px) {
+		text-align: center;
+		width: 100%;
+	}
 }
-.pageContainer{
-  padding: 0 60px;
+.pageContainer {
+	padding: 0 60px;
 }
-.horizontalLine{
-  margin: 5% 0;
+.horizontalLine {
+	margin: 5% 0;
 }
-.map{
-  width: 100%;
+.map {
+	width: 100%;
 }

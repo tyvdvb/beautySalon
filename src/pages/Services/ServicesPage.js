@@ -10,13 +10,12 @@ import { useSearchParams } from 'react-router-dom';
 import { CardListEvenElements, CardListOddElements } from './CardList';
 
 export const ServicesPage = () => {
-	const [searchParams, setSearchParams] = useSearchParams();
+	const [searchParams] = useSearchParams();
 	useEffect(() => {
 		const scrollTo = searchParams.get('scrollTo');
 		if (scrollTo) {
 			const element = document.getElementById(scrollTo);
 			element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-			setSearchParams({});
 		}
 	}, [searchParams.get('scrollTo')]);
 	return (

@@ -52,7 +52,6 @@ const stylistsArrayByService = {
 
 const localizer = momentLocalizer(moment);
 const CustomEvent = ({ event }) => {
-	console.log(event);
 	return (
 		<div style={{ color: event.isMy ? 'yellow' : 'white' }}>{event.title}</div>
 	);
@@ -87,10 +86,10 @@ export function MyCalendar() {
 		setSelectedEvent({});
 	};
 
-	const handleSelectEvent = (event) => {
-		setIsModalOpen(true);
-		setSelectedEvent(event);
-	};
+	// const handleSelectEvent = (event) => {
+	// 	setIsModalOpen(true);
+	// 	setSelectedEvent(event);
+	// };
 	const selectedEventChanged = (changes) => {
 		setSelectedEvent((current) => {
 			return {
@@ -185,7 +184,6 @@ export function MyCalendar() {
 							disabledTime={(currentDate) => {
 								return {
 									disabledMinutes: () => {
-										console.log(currentDate?.toDate().getHours());
 										const selectedStylistsEvents = events.filter(
 											(el) =>
 												el.stylist === selectedEvent?.stylist &&
@@ -329,7 +327,7 @@ export function MyCalendar() {
 					selectable
 					events={myEvents}
 					localizer={localizer}
-					onSelectEvent={handleSelectEvent}
+					// onSelectEvent={handleSelectEvent}
 					onSelectSlot={handleSelectSlot}
 					components={{ event: CustomEvent }}
 				/>

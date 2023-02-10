@@ -1,172 +1,181 @@
-.main-img{
-    width: 100%;
+.main-img {
+	width: 100%;
 
-    opacity: 0.6;
-    display: block;
-    margin: 0;
+	opacity: 0.6;
+	display: block;
+	margin: 0;
 }
 
-.imgText{
-    position: absolute;
-    top: 55%;
-    left: 45%;
-    color: rgb(26, 30, 26);
-    line-height: 2em;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    opacity: 0.7;
-    @media screen and (max-width: 768px) {
-        font-size: 12px;
-    }
+.imgText {
+	position: absolute;
+	top: 55%;
+	left: 45%;
+	color: rgb(22, 33, 22);
+	line-height: 2em;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	opacity: 0.9;
+	@media screen and (max-width: 768px) {
+		font-size: 12px;
+	}
 }
-.reviews{
-    background-color: rgba(0, 0, 0, 0.91);
-    color: white;
-    margin: 0;
-    font-family: "Imprint MT Shadow", serif;
-    text-align: center;
-    padding: 4% ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.reviews {
+	background-color: rgba(0, 0, 0, 0.91);
+	color: white;
+	margin: 0;
+	font-family: 'Imprint MT Shadow', serif;
+	text-align: center;
+	padding: 4%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media screen and (max-width: 768px) {
+		font-size: 12px;
+	}
 }
-.salonStory{
-    position: absolute;
-    text-align: center;
-    background-color: rgba(117, 150, 116, 0.77);
-    padding: 30px;
-    width: 400px;
-    top: -20px;
-    left: -250px;
-    z-index: 2;
-    p{
-        font-family: 'Bitter', serif;
-    }
-    @media screen and (max-width: 768px) {
-      position: unset;
-        width: 100%;
-    }
-
+.salonStory {
+	position: absolute;
+	text-align: center;
+	background-color: rgba(117, 150, 116, 0.77);
+	padding: 30px;
+	width: 400px;
+	top: -20px;
+	left: -250px;
+	z-index: 2;
+	p {
+		font-family: 'Bitter', serif;
+	}
+	@media screen and (max-width: 991px) {
+		position: unset;
+		width: 100%;
+		h1 {
+			font-size: 20px;
+		}
+	}
 }
-.workHours{
-    position: absolute;
-    background-color: rgba(117, 150, 116, 0.77);
-    padding: 40px;
-    width: 350px;
-    text-align: center;
-    bottom: 20px;
-    right: -255px;
-    p{
-        font-family: 'Bitter', serif;
-    }
-    @media screen and (max-width: 768px) {
-        position: unset;
-        width: 100%;
-    }
-
+.workHours {
+	position: absolute;
+	background-color: rgba(117, 150, 116, 0.77);
+	padding: 40px;
+	width: 350px;
+	text-align: center;
+	bottom: 20px;
+	right: -255px;
+	p {
+		font-family: 'Bitter', serif;
+	}
+	@media screen and (max-width: 991px) {
+		position: unset;
+		width: 100%;
+		h1 {
+			font-size: 20px;
+		}
+	}
 }
-.storyHoursContainer{
-    flex-wrap: wrap;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
-        align-items: center;
-    }
-
+.storyHoursContainer {
+	flex-wrap: wrap;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	@media screen and (max-width: 991px) {
+		flex-direction: column;
+		align-items: center;
+	}
 }
-.salonOwnerPic{
-    margin-top: 50px;
-    display: block;
-    position: relative;
-    width: 450px;
-    img{opacity: 0.6;
-    }
-    @media screen and (max-width: 768px) {
-
-        width: 100%;
-        margin-top: 0;
-    }
-
+.salonOwnerPic {
+	margin-top: 50px;
+	display: block;
+	position: relative;
+	width: 450px;
+	img {
+		opacity: 0.6;
+	}
+	@media screen and (max-width: 991px) {
+		width: 100%;
+		margin-top: 0;
+	}
 }
 
 .salonMission {
-    h1{
-        font-family: "Imprint MT Shadow", serif;
-    }
-    p{
-        font-family: 'Bitter', serif;
-        margin: 2% 10%;
-        text-align: center;
-    }
+	h1 {
+		font-family: 'Imprint MT Shadow', serif;
+	}
+	p {
+		font-family: 'Bitter', serif;
+		margin: 2% 10%;
+		text-align: center;
+	}
+	@media screen and (max-width: 768px) {
+		h1 {
+			font-size: 20px;
+		}
+	}
 }
-.salonPictures{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px 20px;
-    max-width: 100%;
-}
-
-.arrow{
-    color: black;
-}
-
-.media{
-    max-width: 100%;
-    width: 300px;
-    height: 300px;
-    @media screen and (max-width: 768px) {
-       height: auto;
-    }
+.salonPictures {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px 20px;
+	max-width: 100%;
 }
 
-.links{
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-}
-.nav{
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 10px 20px;
-    @media screen and (max-width: 768px) {
-        display: block;
-    }
-
+.arrow {
+	color: black;
 }
 
-.buttonLabel{
-    position: relative;
-    display: block;
-    margin: 15px 20px;
+.media {
+	max-width: 100%;
+	width: 300px;
+	height: 300px;
+	@media screen and (max-width: 768px) {
+		height: auto;
+	}
 }
 
-.buttons{
-    background-color: black;
-    height: 100px;
-    width: 100%;
-    color: white;
-    @media screen and (max-width: 768px) {
-        display: block;
-        height: 70px;
-    }
+.links {
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
 }
-.horizontalLine{
-    margin: 5% 0;
-}
-.buttonContainer{
-    text-align: center;
+.nav {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 10px 20px;
+	@media screen and (max-width: 768px) {
+		display: block;
+	}
 }
 
-#date{
-    font-style : italic;
-    margin-top: 4%;
-}
-#image{
-    width: 100% ;
-    object-fit: cover;
+.buttonLabel {
+	position: relative;
+	display: block;
+	margin: 15px 20px;
+	font-family: 'Bitter', serif;
 }
 
+.buttons {
+	background-color: black;
+	height: 100px;
+	width: 100%;
+	color: white;
+	@media screen and (max-width: 768px) {
+		display: block;
+		height: 70px;
+	}
+}
+.horizontalLine {
+	margin: 5% 0;
+}
+.buttonContainer {
+	text-align: center;
+}
+
+#date {
+	font-style: italic;
+	margin-top: 4%;
+}
+#image {
+	width: 100%;
+	object-fit: cover;
+}
